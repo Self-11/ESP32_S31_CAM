@@ -1,0 +1,9 @@
+menu "Face Recognition Service"
+
+    config FACE_RECOGNITION_DB_PATH
+        string "Face database file path"
+        default "/spiffs/face_db.bin"
+        help
+            Path where enrolled face features will be persisted.
+
+endmenu

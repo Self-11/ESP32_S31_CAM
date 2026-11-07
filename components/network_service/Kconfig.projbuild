@@ -1,0 +1,25 @@
+menu "ESP32-S31 camera network"
+
+config S31_CAM_WIFI_AP_SSID
+    string "Camera Wi-Fi hotspot name"
+    default "ESP32-S31-CAM"
+
+config S31_CAM_WIFI_AP_PASSWORD
+    string "Camera Wi-Fi hotspot password"
+    default "esp32s31"
+    help
+        Must contain at least 8 characters. Leave empty only for an open hotspot.
+
+config S31_CAM_WIFI_AP_CHANNEL
+    int "Camera Wi-Fi channel"
+    range 1 13
+    default 6
+
+config S31_CAM_OTA_TOKEN
+    string "OTA upload token"
+    default "s31cam-ota"
+    help
+        Required in the X-OTA-Token HTTP header. Change this before deploying
+        devices outside a trusted development LAN.
+
+endmenu

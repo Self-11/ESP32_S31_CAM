@@ -1,0 +1,22 @@
+# ESP-IDF 组件依赖清单
+# esp32_s31_korvo_1: Korvo-1 开发板 BSP 驱动
+# esp_video: V4L2 视频设备框架
+# esp_cam_sensor: OV3660 摄像头传感器驱动
+# esp_new_jpeg: 硬件 JPEG 编码器
+# esp-dl + human_face_detect: 人脸检测模型（MSRMNP）
+# human_face_recognition: 人脸识别模型（MFN）
+dependencies:
+  espressif/esp32_s31_korvo_1:
+    version: "^1.0.0"
+  espressif/esp_video:
+    version: "~2.2"
+  espressif/esp_cam_sensor:
+    version: "~2.2"
+  espressif/esp_new_jpeg:
+    version: "^1.0"
+  espressif/esp-dl:
+    version: "3.3.11"
+  espressif/human_face_detect:
+    version: "^0.4"
+  espressif/human_face_recognition:
+    version: "*"
